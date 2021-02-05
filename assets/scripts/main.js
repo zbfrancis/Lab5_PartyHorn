@@ -14,7 +14,8 @@ function changeVol() {
 
 document.getElementById("honk-btn").addEventListener("click", playSound);
 
-function playSound() {
+function playSound(event) {
+    event.preventDefault();
     sound.getElementById("horn-sound").play();
 }
 
