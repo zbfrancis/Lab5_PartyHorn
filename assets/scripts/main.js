@@ -1,3 +1,6 @@
 // main.js
+function playSound() {
+    document.getElementById("horn-sound").autoplay();
+}
 
-// TODO
+document.getElementById("honk-btn").addEventListener("click", playSound);
